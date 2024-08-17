@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>A_Score</title>
+
+        <script type="text/javascript">
+            var cont1 = 0;
+            var cont2 = 0;
+            var delta;
+
+            function home_team_2() {
+                cont1+=2;
+                document.getElementById('home').innerHTML = cont1; 
+            }
+
+            function home_team_3() {
+                cont1+=3;
+                document.getElementById('home').innerHTML = cont1;  
+            }
+
+            function away_team_2() {
+                cont2+=2;
+                document.getElementById('away').innerHTML = cont2; 
+            }
+
+            function away_team_3() {
+                cont2+=3;
+                document.getElementById('away').innerHTML = cont2; 
+            }
+
+        </script>
+    </head>
+
+    <body>
+        <p id = "home">0</p>
+        <input type = "button" value = "2" onClick = "javascript:home_team_2();"> 
+        <input type = "button" value = "3" onClick = "javascript:home_team_3();">
+
+        <p style="font-size: 15px; text-align: center"> vs </p>
+
+        <p id="away">0</p>
+        <input type = "button" value = "2" onClick = "javascript:away_team_2();"> 
+        <input type = "button" value = "3" onClick = "javascript:away_team_3();">
+
+        <p id="diff_"></p>
+    </body>
+
+    <style>
+        #home {
+            font-size: 25px;
+            text-align: center;
+            border: 2px solid gold;
+        }
+        #away {
+            font-size: 25px;
+            text-align: center;
+            border: 2px solid gold;
+        }
+    </style>
+</html>
